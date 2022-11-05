@@ -1,99 +1,97 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    /* background: linear-gradient(to bottom,rgb(105, 105, 184),white);*/
-    height: 100vh;
-    font-family: 'Bayon', sans-serif;
-   /* color:rgb(130, 214, 220); */
-    font-size: 20px;
-    background-image: url(/imagenes/tumbleweed-acegif-45.gif);
-    background-repeat: round;   
-    background-size:cover;
+body {
+  /* background: linear-gradient(to bottom,rgb(105, 105, 184),white);*/
+  height: 100vh;
+  font-family: 'Bayon', sans-serif;
+  /* color:rgb(130, 214, 220); */
+  font-size: 20px;
+  background-image: url('../imagenes/tumbleweed-acegif-45.gif');
+  background-repeat: round;
+  background-size: cover;
+}
+/*aca puse propiedades de flex para cetrar todo y que se ajuste a vistas mas chicas . 
+puse flex-directin para que se pongan todos los elementos uno abajo del otro en columnas y el jsutyfy contentn y aligt-item para centrar todo
+y ajuste un poco los botones del + y el -*/
 
-    
-    
-
+.contenedor {
+  height: auto;
+  /* margin: auto; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.contenedor{
-    width: 400px;
-    height: 600px;
-    margin:  auto;
-    
+.parteSuperior {
+  margin: 30px 0 1px 0;
 }
 
-.parteSuperior{
-    margin: 30px 0 1px 0;
+.barraDeTareas {
+  background-color: rgb(248, 247, 247);
+  border-radius: 10px;
+  width: 300px;
+  height: 60px;
+  margin-bottom: 15px;
+  border: none;
 }
 
-.barraDeTareas{
-    background-color: rgb(248, 247, 247);
-    border-radius: 10px;
-    width: 300px;
-    height: 60px;
-    margin-bottom: 15px;
-    border:none;
+.barraDeTareas ::placeholder {
+  opacity: 0.3;
 }
 
-.barraDeTareas ::placeholder{
-    opacity: 0.3;
+#input {
+  border: none;
+  height: 20px;
+  border-radius: 0px;
+  padding-left: 30px;
+  width: 250px;
+  background-color: rgb(248, 247, 247);
+  margin: 20px 10px 20px 10px;
+  outline: none;
+  font-family: 'Bayon', sans-serif;
+  font-size: 20px;
+  color: rgb(168, 176, 177);
 }
 
-#input{
-    border:none;
-    height: 20px;
-    border-radius: 0px;
-    padding-left: 30px;
-    width: 250px;
-    background-color: rgb(248, 247, 247);
-    margin: 20px 10px 20px 10px;
-    outline: none;
-    font-family: 'Bayon', sans-serif;
-    font-size: 20px;
-    color:rgb(168, 176, 177);
-        
-
+button {
+  border-radius: 50%;
+  font-size: 20px;
+  width: 24px;
+  color: white;
+  font-weight: bold;
+  margin-top: 5px;
+  margin-left: -5px;
+  background-color: rgb(105, 105, 184);
+  cursor: pointer;
 }
 
-
-button{
-    
-    border-radius: 50%;
-    font-size: 20px;
-    color:white;
-    font-weight: bold;
-    margin-top: 5px;
-    background-color: rgb(105, 105, 184);
-    
+button:hover {
+  transform: scale(1.1);
 }
 
-button:hover{
-    transform: scale(1.1);
+li {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+  background-color: rgb(248, 247, 247);
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 10px;
+  color: rgb(7, 10, 11);
 }
 
-li{
-    display: flex;
-    justify-content: space-between;
-    width: 300px;
-    background-color: rgb(248, 247, 247);
-    border-radius: 10px;
-    padding: 10px;
-    margin-top: 10px;
-    color:rgb(7, 10, 11);
+li button {
+  background-color: red;
+  height: 27px;
 }
-
-li button{
-    background-color: red;
+li button:hover {
+  transform: scale(1.1);
 }
-li button:hover{
-    transform:scale(1.1);
-}
-
-.sinTareas p{
-    padding-left: 45px;
+.fecha {
+  margin-left: 15px;
 }
